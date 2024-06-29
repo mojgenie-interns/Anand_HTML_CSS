@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./pieces-blue-stationery.jpg);
+    background-size:cover;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    padding: 5px 0;
+    color: #28a745;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.divClass {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(5, 46, 11, 0.1);
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+form .p {
+    margin-bottom: 20px;
+    color: black;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
