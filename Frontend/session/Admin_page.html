@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Ensures full height of viewport */
+        }
+        
+        .wrapper {
+            display: flex;
+            flex: 1;
+        }
+        
+        .toolbar {
+            background-color: #333;
+            color: white;
+            width: 200px;
+            /* Width of the vertical toolbar */
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        
+        .toolbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+        
+        .content {
+            flex: 1;
+            /* Takes remaining space */
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Library</h1>
+    </header>
+    <div class="wrapper">
+        <nav class="toolbar">
+            <h2>Toolbar</h2>
+            <a href="#">Home</a>
+            <a href="/Home_page.html">Log Out</a>
+            <a href="/html//book.php">List Of Book</a>
+        </nav>
+        <main class="content">
+            <p>This is the main content area of your homepage.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024  All rights reserved.</p>
+    </footer>
+</body>
+</html>
