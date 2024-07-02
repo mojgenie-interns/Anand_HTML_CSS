@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f2f2f2;
-        }
-        .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        .login-container h2 {
-            margin-bottom: 20px;
-        }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        .login-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-        .login-container input[type="submit"]:hover {
-            background-color: #555;
-        }
-    </style>
+
 </head>
-<body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="connection.php" method="POST">
-            <input type="text" name="username" placeholder="username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-        </form>
+
+<body style="background-color: cornsilk ;">
+
+    <div class="page">
+        <header class="navbar navbar-expand-sm navbar-light d-print-none">
+            <div class="container-xl">
+                <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+                    <a href="#">
+                        <img src="..." width="110" height="32" alt="Library Management System"
+                            class="navbar-brand-image" />
+                    </a>
+                </h1>
+            </div>
+        </header>
+        <div class="page-wrapper"
+            style="height: 300px; width:600px ;align-items: center; padding-top: 120px; margin-top: 10%; margin-left: 600px">
+
+            <div class="container-xl">
+                <div class="row row-deck row-cards">
+
+                    <div class="card">
+                        <div class="card-body" style="height: 300px; width:600px;">
+                            <div class="mb-3">
+                                <h2 style="text-align: center;"> <strong>Log In</strong></h2>
+                                <form action="connection.php" method="POST">
+                                    <br>
+                                    <label class="form-label">User Name</label>
+                                    <input type="text" class="form-control " name="username" placeholder="username" />
+                                    <br>
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control " name="password"
+                                        placeholder="password" />
+                                    <br>
+                                    <input class="btn btn-indigo" type="submit" name="submit" value="Login">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
+
 </html>

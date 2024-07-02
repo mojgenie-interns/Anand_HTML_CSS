@@ -1,14 +1,24 @@
-<?php
-session_start();
-$servername = "localhost";
-$username = "root"; 
-$password = "root";
-$dbname = "library_management"; 
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection page</title>
+</head>
+<body>
+<?php 
+session_start()
+try {
+    $dbhost = 'localhost';
+    $dbname='library_management';
+    $dbuser = 'root';
+    $dbpass = 'Mojgenie@0111';
+    $connect = new PDO(
+"mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+}
+catch (PDOException $e) {
+    echo "Error : " . $e->getMessage() . "<br/>";
+    die();
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -16,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = htmlspecialchars($_POST['password']);
 
     $username = $conn->real_escape_string($username);
-    $stmt = $conn->query("SELECT password FROM users WHERE user_name = '$username'");
+    $stmt = $conn->query("SELECT password FROM library_managers WHERE username = '$username';");
 
     if ($stmt) {
         $row = $stmt->fetch_assoc();
@@ -31,4 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $conn->close();
-}
+}  
+?>
+</body>
+</Html>

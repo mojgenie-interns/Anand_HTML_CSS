@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
     <title>Home Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            /* Ensures full height of viewport */
-        }
-        
-        .wrapper {
-            display: flex;
-            flex: 1;
-        }
-        
-        .toolbar {
-            background-color: #333;
-            color: white;
-            width: 200px;
-            /* Width of the vertical toolbar */
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-        }
-        
-        .toolbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 0;
-        }
-        
-        .content {
-            flex: 1;
-            /* Takes remaining space */
-            padding: 20px;
-        }
-        
-        header {
-            background-color: #f2f2f2;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        </style>
+
 </head>
-<body>
-    <header>
-        <h1>Welcome to Our Library</h1>
+
+<body
+    style="background-image:linear-gradient(rgba(0, 0, 0, 0.164),rgba(0,0,0,0.6)), url(./jessica-ruscello-OQSCtabGkSY-unsplash.jpg); background-size: cover; ">
+    <header style="background-color:white; padding-left: 700px; height: 50px;">
+        <div class="page-header">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2 class="page-title">
+                        Welcome to Our Library
+                    </h2>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="wrapper">
-        <nav class="toolbar">
-            <h2>Toolbar</h2>
-            <a href="#">Home</a>
-            <a href="login.html">Login</a>
-        </nav>
-        <main class="content">
-            <p>This is the main content area of your homepage.</p>
-        </main>
+
+    <aside class="navbar navbar-vertical navbar-expand-sm navbar-dark" style="margin-top: 50px;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="sidebar-menu">
+                <ul class="navbar-nav pt-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Homepage.html">
+                            <span class="nav-link-title">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">
+                            <span class="nav-link-title">
+                                Login
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="nav-link-title">
+                                Contact
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <div class="container-xl" style="margin-top:300px; color:white;margin-left: 500px;">
+        <!-- <div class="card"> -->
+        <div class="card-body" style="height: 300px; width: 700px;">
+            <div class="mb-3">
+                <h1 style="text-align: center;"> <strong>About</strong></h2>
+                    <h3 style="text-align: justify;">A Library Management System is a software application used by
+                        libraries to manage their
+                        resources
+                        efficiently.It helps librarians organize, catalogue, and circulate books, journals, media, and
+                        other
+                        materials available in the library.
+                        Let’s take a look at an example of a library system to understand how it works.
+                    </h3>
+            </div>
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2024  All rights reserved.</p>
-    </footer>
+    </div>
+
 </body>
+
 </html>
